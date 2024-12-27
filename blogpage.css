@@ -1,0 +1,103 @@
+:root {
+    --BG-COLOR-HS: #FEFCFB;
+    --BLACK: #000000;
+    --FONT_COLOR: #222222;
+    --BTN_ORANGE: #FA7436;
+    --BTN_SEC_ORANGE: #FD8D3A;
+    --FC-SHAD: #666666;
+    --BG-TODO: #F7F8FC;
+    --FC-SEC_SHAD:#999999
+}
+
+.inter {
+    font-family: "Inter", serif;
+    font-optical-sizing: auto;
+    font-weight: weight;
+    font-style: normal;
+  }
+
+.flex{
+    display: flex;
+}
+
+body{
+    .blog{
+        width: 100%;
+        aspect-ratio: 2.385/1;
+        background-color: var(--BG-COLOR-HS);
+        display: flex;
+        justify-content: center;
+        .blog_container{
+            height: 100%;
+            width: 65%;
+            flex-direction: column;
+            align-items: center;
+            .txt_con{
+                height: 23%;
+                width: 51%;
+                align-items: flex-end;
+                .main_txt{
+                    width: 100%;
+                    font-size: 2.5vw;
+                    .glow{
+                        color: var(--BTN_ORANGE);
+                        display: inline;
+                    }
+                }
+            }
+            .blog_info{
+                width: 100%;
+                height: 77%;
+                padding: 5% 0;
+                justify-content: center;
+                align-items: center;
+                flex-direction: column;
+                .blog_details{
+                    width: 100%;
+                    height: 80%;
+                    justify-content: space-evenly;
+                    .info{
+                        width: 22%;
+                        height: 100%;
+                        flex-direction: column;
+                        .img_blog{
+                            height: 65%;
+                            width: 100%;
+                            .blog_img{
+                                width: 100%;
+                                height: auto;   
+                            }
+                        }
+                        .txt_blog{
+                            height: 35%;
+                            width: 100%;
+                            flex-direction: column;
+                            justify-content: space-evenly;
+                            .blog_txt{
+                                font-size: 0.9vw;
+                                color: var(--FONT_COLOR);
+                                width: 90%;
+                            }
+                            .postDate{
+                                color: var(--FC-SEC_SHAD);
+                                font-size: 0.8vw;
+                            }
+                        }
+
+                    }
+                }
+                .slider{
+                    width: 10%;
+                    height: 10%;
+                    justify-content: center;
+                    align-items: center;
+                    img{
+                        width: 50%;
+                    }
+                }
+            }
+            
+        }
+        
+    }
+}

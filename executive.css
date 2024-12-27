@@ -1,0 +1,220 @@
+:root {
+    --BG-COLOR-HS: #FEFCFB;
+    --BLACK: #000000;
+    --FONT_COLOR: #222222;
+    --BTN_ORANGE: #FA7436;
+    --BTN_SEC_ORANGE: #FD8D3A;
+    --FC-SHAD: #666666;
+    --BG-TODO: #F7F8FC;
+}
+
+.flex {
+    display: flex;
+}
+
+/* EXCLUSIVE DEALS & DISCOUNT PAGE */
+body {
+    .exclusive_deals_page {
+        width: 100%;
+        aspect-ratio: 2/1;
+        background-color: var(--BG-COLOR-HS);
+        justify-content: center;
+
+        >.ex_container {
+            width: 65%;
+            height: 100%;
+            flex-direction: column;
+            align-items: center;
+
+            >.content {
+                flex-direction: column;
+                align-items: center;
+                height: 35%;
+                width: 100%;
+                justify-content: center;
+                position: relative;
+
+                .deals_head {
+                    font-size: 2.5vw;
+                    padding: 4% 0;
+                    width: 100%;
+                    color: var(--FONT_COLOR);
+                    text-align: center;
+
+                    .txt_todo {
+                        color: var(--BTN_ORANGE);
+                    }
+                }
+
+                .deals_para {
+                    font-size: 0.9vw;
+                    color: var(--FC-SHAD);
+                    text-align: center;
+                    width: 36%;
+                }
+
+                .flight {
+                    position: absolute;
+                    width: 35%;
+                    left: 116%
+                }
+            }
+
+            .venues {
+                width: 91%;
+                height: 45%;
+                justify-content: space-between;
+
+                >.venue_container {
+                    width: 24%;
+                    aspect-ratio: 1/1.58;
+                    justify-content: flex-start;
+                    box-shadow: 0px 0px 5px 0.1px rgb(230, 228, 228);
+                    flex-direction: column;
+                    border-radius: 6px;
+                    transition: box-shadow, 0.15s;
+
+                    .select {
+                        position: relative;
+                        height: 70%;
+                        width: 100%;
+
+                        .venue_image {
+                            width: 100%;
+                            height: auto;
+                            filter: brightness(100%);
+                            position: absolute;
+                        }
+
+                        .booknow {
+                            display: none;
+                            z-index: 1;
+                            position: absolute;
+                            font-size: 1vw;
+                            left: 25%;
+                            top: 65%;
+                            padding: 5% 10%;
+                            border-radius: 5px;
+                            border: none;
+                            background-color: var(--BTN_ORANGE);
+                            color: white;
+                        }
+                    }
+
+                    .venue_details {
+                        justify-content: space-between;
+                        padding: 3% 0;
+
+                        .venue_name {
+                            padding: 0 7%;
+                            font-size: 1.2vw;
+                        }
+
+                        .rating_info {
+                            width: 16%;
+                            justify-content: space-between;
+                            align-items: center;
+                            padding: 0 10%;
+
+                            .ratingstar {
+                                width: auto;
+                                height: 40%;
+                            }
+
+                            .rate {
+                                font-size: 1vw;
+                                color: var(--FC-SHAD);
+                            }
+                        }
+                    }
+
+                    .pricing_info {
+                        justify-content: space-between;
+
+                        .region {
+                            align-items: center;
+                            padding: 0 7%;
+
+                            .loc_icon {
+                                width: 33%;
+                                height: auto;
+                            }
+
+                            .region_name {
+                                padding: 0 15%;
+                                color: var(--FC-SHAD);
+                                font-size: 0.85vw;
+                            }
+                        }
+
+                        .pricing {
+                            width: 44%;
+                            justify-content: flex-end;
+
+                            .oldPrice {
+                                font-size: 0.9vw;
+                                color: #999999;
+                                text-decoration: line-through;
+                                text-decoration-thickness: 1.1px;
+                            }
+
+                            .newPrice {
+                                margin: 0 10%;
+                                font-size: 0.9vw;
+                                background-color: #FFE7DB;
+                                color: var(--BTN_ORANGE);
+                            }
+                        }
+                    }
+                }
+
+                .venue_container:hover {
+                    box-shadow: 0px 0px 5px 0.1px rgb(248, 143, 143);
+
+                    .select {
+                        .booknow {
+                            display: block;
+                            cursor: pointer;
+                            font-size: 1vw;
+                        }
+
+                        .booknow:active {
+                            opacity: 0.7;
+                            font-size: 1vw;
+                        }
+                    }
+
+                    .venue_image {
+                        filter: brightness(60%);
+                    }
+
+                    .venue_name {
+                        font-family: "Poppins", serif;
+                        font-weight: 700;
+                        font-size: 1.2vw;
+                        font-style: normal;
+                        color: var(--FONT_COLOR);
+                    }
+                }
+            }
+
+            .arrow {
+                width: 100%;
+                height: 20%;
+                justify-content: center;
+                align-items: center;
+
+                .nav_arrow {
+                    justify-content: center;
+                    align-items: center;
+                    height: 28%;
+                    width: 9%;
+
+                    .arrowimage {
+                        height: 80%;
+                    }
+                }
+            }
+        }
+    }
+}

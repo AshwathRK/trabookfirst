@@ -1,0 +1,219 @@
+:root {
+    --BG-COLOR-HS: #FEFCFB;
+    --BLACK: #000000;
+    --FONT_COLOR: #222222;
+    --BTN_ORANGE: #FA7436;
+    --BTN_SEC_ORANGE: #FD8D3A;
+    --FC-SHAD: #666666;
+    --BG-TODO: #F7F8FC;
+    --BG-SEC-SHAD: #999999;
+}
+
+@font-face{
+    font-family: poppins-regular;
+    src: url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Volkhov:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+}
+
+.flex {
+    display: flex;
+}
+
+
+.footer {
+    width: 100%;
+    aspect-ratio: 2.14/1;
+    position: relative;
+    flex-direction: column;
+    align-items: center;
+
+    .subscribe_page {
+        position: relative;
+        width: 100%;
+        height: 23.4%;
+        justify-content: center;
+
+        /* background-color: var(--BTN_SEC_ORANGE); */
+        .dealsOffers {
+            position: absolute;
+            width: 65%;
+            aspect-ratio: 2.81/1;
+            background-color: #FA7436;
+            border-radius: 10px;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+
+            .mainText {
+                font-size: 2.5vw;
+                width: 60%;
+                color: white;
+                text-align: center;
+            }
+
+            .mail {
+                width: 55%;
+                background-color: white;
+                justify-content: flex-start;
+                align-items: center;
+                position: relative;
+                border-radius: 5px;
+                z-index: 1;
+
+                .mailBox {
+                    width: 3%;
+                    position: absolute;
+                    left: 0.4vw;
+                    
+                }
+
+                .text {
+                    width: 100%;
+                    padding: 3% 0 3% 5%;
+                    border: none;
+                    border-radius: 5px;
+                    color: var(--FONT_COLOR);
+                }
+
+                .text::placeholder {
+                    font-family: poppins-regular;
+                    font-size: 1vw;
+                }
+                .subscribe{
+                    position: absolute;
+                    left: 28.3vw;
+                    width: 19%;
+                    height: 80%;
+                    background-color: var(--BTN_ORANGE);
+                    color: white;
+                    border: none;
+                    border-radius: 2px;
+                    font-size: 1vw;
+                    transition: opacity 0.15s;
+                }
+                .subscribe:hover{
+                    opacity: 0.8;
+                }
+            }
+            .element{
+                position: absolute;
+                width: 40%;
+                height: auto;
+                right: 38.5vw;
+                bottom: 0vw;
+            }
+            .cocoTree{
+                position: absolute;
+                left: 58vw;
+                top: 1vw;
+                width: 9%;
+            
+            }
+        }
+
+    }
+
+    .butomn_footer {
+        width: 100%;
+        height: 76.6%;
+        aspect-ratio: 2.79/1;
+        background-color: var(--BG-TODO);
+        justify-content: center;
+
+        .footer_info {
+            width: 65%;
+            justify-content: flex-end;
+            flex-direction: column;
+
+            .container_foot {
+                height: 35%;
+                width: 100%;
+
+                .left_info {
+                    width: 40%;
+                    height: 100%;
+                    flex-direction: column;
+                    justify-content: space-evenly;
+
+                    .logo {
+                        width: 25%;
+                    }
+
+                    .para {
+                        color: var(--FC-SHAD);
+                        font-size: 0.9vw;
+                        width: 60%;
+                    }
+
+                    .social_media {
+                        img {
+                            width: 40%;
+                            height: auto;
+                        }
+                    }
+                }
+
+                .right_info {
+                    width: 60%;
+                    height: 100%;
+                    justify-content: space-evenly;
+
+                    .info {
+                        flex-direction: column;
+                        /* align-items: center; */
+                        width: 21.33%;
+                        ;
+                        height: 100%;
+
+                        .hedding {
+                            height: 20%;
+                            padding: 0;
+                            align-items: center;
+
+                            .hedding_info {
+                                font-size: 0.9vw;
+                                /* padding: 15% 0; */
+                            }
+                        }
+
+                        .links {
+                            height: 60%;
+                            padding: 10% 0;
+                            flex-direction: column;
+                            justify-content: space-between;
+
+                            .underLinks {
+                                flex-direction: column;
+                                justify-content: space-between;
+
+                                .subLinks {
+                                    text-decoration: none !important;
+                                    font-size: 0.9vw;
+                                    color: var(--FC-SHAD);
+                                    display: inline;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+
+            hr {
+                height: 0.01%;
+                width: 100%;
+                background-color: var(--FONT_COLOR);
+            }
+
+            .copyRights {
+                width: 100%;
+                height: 13%;
+                justify-content: space-between;
+                align-items: center;
+
+                p {
+                    font-size: 0.9vw;
+                    color: var(--BG-SEC-SHAD);
+                }
+            }
+        }
+    }
+}

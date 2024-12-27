@@ -1,0 +1,65 @@
+:root {
+    --BG-COLOR-HS: #FEFCFB;
+    --BLACK: #000000;
+    --FONT_COLOR: #222222;
+    --BTN_ORANGE: #FA7436;
+    --BTN_SEC_ORANGE: #FD8D3A;
+    --FC-SHAD: #666666;
+    --BG-TODO: #F7F8FC;
+}
+.flex{
+    display: flex;
+}
+
+body{
+    .aboutus_page{
+        width: 100%;
+        aspect-ratio: 3.22/1;
+        background-color: var(--BG-TODO);
+        justify-content: center;
+        .aboutus_content{
+            width: 65%;
+            .left_section{
+                width: 50%;
+                align-items: center;
+                .left_section_con{
+                    height: 42%;
+                    flex-direction: column;
+                    justify-content: space-evenly;
+                    .main_txt{
+                        font-size: 2.4vw;
+                        .glow{
+                            color: var(--BTN_ORANGE);
+                        }
+                    }
+                    .sub_txt{
+                        color: var(--FC-SHAD);
+                        font-size: 0.8vw;
+                        width: 80%;
+                    }
+                    .slider_img{
+                        width: 17%;
+                    }
+                }
+                
+                
+            }
+            .right_section{
+                width: 58%;
+                justify-content: flex-start;
+                align-items: flex-end;
+                position: relative;
+                .comments{
+                    width: 100%;
+                }
+                .flight{
+                    position: absolute;
+                    width: 23%;
+                    height: auto;
+                    top: 3vw;
+                    left: 30vw;
+                }
+            }
+        }
+    }
+}

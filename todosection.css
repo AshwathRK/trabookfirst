@@ -1,0 +1,109 @@
+:root {
+    --BG-COLOR-HS: #FEFCFB;
+    --BLACK: #000000;
+    --FONT_COLOR: #222222;
+    --BTN_ORANGE: #FA7436;
+    --BTN_SEC_ORANGE: #FD8D3A;
+    --FC-SHAD: #666666;
+    --BG-TODO: #F7F8FC;
+}
+
+.flex{
+    display: flex;
+}
+
+/* THINKS YOU NEED TO DO */
+
+.todo_page {
+    width: 100%;
+    aspect-ratio: 2.652/1;
+    background-color: var(--BG-TODO);
+    justify-content: center;
+
+    >.todo_container {
+        width: 65%;
+        flex-direction: column;
+        align-items: center;
+        justify-content: flex-start;
+        >.content {
+            flex-direction: column;
+            align-items: center;
+            height: 50%;
+            width: 50%;
+            justify-content: center;
+            position: relative;
+
+            .todo_head {
+                font-size: 2.5vw;
+                padding: 5% 0;
+                color: var(--FONT_COLOR);
+
+                .txt_todo {
+                    color: var(--BTN_ORANGE);
+                }
+            }
+
+            .todo_para {
+                font-size: 0.95vw;
+                color: var(--FC-SHAD);
+                text-align: center;
+                width: 80%;
+            }
+
+            .flight {
+                position: absolute;
+                width: 28%;
+                left: 34vw;
+                top: 6vw;
+            }
+        }
+
+        .todo_activites {
+            justify-content: space-evenly;
+            width: 100%;
+            height: 36%;
+
+            .todo_lists {
+                width: 24%;
+                aspect-ratio: 1.33/1;
+                border-radius: 3px;
+                padding: 3%;
+                box-shadow: 0px 0px 5px 0.1px rgb(245, 243, 243);
+                background-color: #FFFFFF;
+                flex-direction: column;
+                justify-content: space-between;
+
+                .checklist_img {
+                    height: auto;
+                    width: 16%;
+                }
+
+                .text_content {
+                    font-size: 1.5vw;
+                }
+
+                .todo_content {
+                    color: var(--FC-SHAD);
+                    font-size: 0.8vw
+
+                }
+            }
+            .signuptodo{
+                background-image: url("asserts/vec 1.png");
+                background-size: 95%;
+                background-repeat: no-repeat; 
+            }
+            .worthtodo{
+                background-image: url("asserts/vec 2.png");
+                background-size: 92%;
+                background-repeat: no-repeat; 
+            }
+            .excitingtodo{
+                background-image: url("asserts/vec 1.png");
+                background-size: 95%;
+                background-repeat: no-repeat; 
+            }
+
+        }
+    }
+}

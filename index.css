@@ -1,0 +1,292 @@
+:root {
+    --BG-COLOR-HS: #FEFCFB;
+    --BLACK: #000000;
+    --FONT_COLOR: #222222;
+    --BTN_ORANGE: #FA7436;
+    --BTN_SEC_ORANGE: #FD8D3A;
+    --FC-SHAD: #666666;
+    --BG-TODO: #F7F8FC;
+}
+
+html,
+body {
+    margin: 0;
+    padding: 0;
+    border: none;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+    margin: 0;
+    padding: 0;
+}
+
+/* POPPINS-FONT */
+
+.poppins-thin {
+    font-family: "Poppins", serif;
+    font-weight: 100;
+    font-style: normal;
+}
+
+.poppins-extralight {
+    font-family: "Poppins", serif;
+    font-weight: 200;
+    font-style: normal;
+}
+
+.poppins-light {
+    font-family: "Poppins", serif;
+    font-weight: 300;
+    font-style: normal;
+}
+
+.poppins-regular {
+    font-family: "Poppins", serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.poppins-medium {
+    font-family: "Poppins", serif;
+    font-weight: 500;
+    font-style: normal;
+}
+
+.poppins-semibold {
+    font-family: "Poppins", serif;
+    font-weight: 600;
+    font-style: normal;
+}
+
+.poppins-bold {
+    font-family: "Poppins", serif;
+    font-weight: 700;
+    font-style: normal;
+}
+
+.poppins-extrabold {
+    font-family: "Poppins", serif;
+    font-weight: 800;
+    font-style: normal;
+}
+
+.poppins-black {
+    font-family: "Poppins", serif;
+    font-weight: 900;
+    font-style: normal;
+}
+
+.poppins-thin-italic {
+    font-family: "Poppins", serif;
+    font-weight: 100;
+    font-style: italic;
+}
+
+.poppins-extralight-italic {
+    font-family: "Poppins", serif;
+    font-weight: 200;
+    font-style: italic;
+}
+
+.poppins-light-italic {
+    font-family: "Poppins", serif;
+    font-weight: 300;
+    font-style: italic;
+}
+
+.poppins-regular-italic {
+    font-family: "Poppins", serif;
+    font-weight: 400;
+    font-style: italic;
+}
+
+.poppins-medium-italic {
+    font-family: "Poppins", serif;
+    font-weight: 500;
+    font-style: italic;
+}
+
+.poppins-semibold-italic {
+    font-family: "Poppins", serif;
+    font-weight: 600;
+    font-style: italic;
+}
+
+.poppins-bold-italic {
+    font-family: "Poppins", serif;
+    font-weight: 700;
+    font-style: italic;
+}
+
+.poppins-extrabold-italic {
+    font-family: "Poppins", serif;
+    font-weight: 800;
+    font-style: italic;
+}
+
+.poppins-black-italic {
+    font-family: "Poppins", serif;
+    font-weight: 900;
+    font-style: italic;
+}
+
+
+/* VOLKHOV   */
+
+.volkhov-regular {
+    font-family: "Volkhov", serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.volkhov-bold {
+    font-family: "Volkhov", serif;
+    font-weight: 700;
+    font-style: normal;
+}
+
+.volkhov-regular-italic {
+    font-family: "Volkhov", serif;
+    font-weight: 400;
+    font-style: italic;
+}
+
+.volkhov-bold-italic {
+    font-family: "Volkhov", serif;
+    font-weight: 700;
+    font-style: italic;
+}
+
+
+
+/* FLEX-CSS */
+.flex {
+    display: flex;
+}
+
+/* JUSTIFY-CONTENT */
+.js_center {
+    justify-content: center;
+}
+
+.js_start {
+    justify-content: flex-start;
+}
+
+.js_end {
+    justify-content: flex-end;
+}
+
+/* ALIGN-ITEMS */
+
+.ai_center {
+    align-items: center;
+}
+
+.ai_start {
+    align-items: flex-start;
+}
+
+.ai_end {
+    align-items: flex-end;
+}
+
+.font_color {
+    color: var(--FONT_COLOR);
+}
+
+.font-shad {
+    color: var(--FC-SHAD);
+}
+
+
+body {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+
+
+
+/* .exclusive_deals_page {
+    height: 793px;
+    width: calc(100% - 590px);
+    padding: 0 306px;
+    background-color: var(--BG-COLOR-HS);
+    align-items: center;
+    flex-direction: column;
+
+    
+} */
+
+/* BEST VECATION PAGE */
+/* .vecation_page {
+    flex-direction: column;
+    width: calc(100% - 590px);
+    padding: 0 306px;
+    align-items: center;
+    height: 737px;
+    background-color: var(--BG-COLOR-HS);
+
+    >.content {
+        flex-direction: column;
+        align-items: center;
+        height: 30%;
+        width: 100%;
+        justify-content: center;
+        position: relative;
+
+        .todo_head {
+            font-size: 40px;
+            padding: 20px 0;
+            color: var(--FONT_COLOR);
+
+            .txt_todo {
+                color: var(--BTN_ORANGE);
+            }
+        }
+
+        .todo_para {
+            font-size: 16px;
+            color: var(--FC-SHAD);
+            text-align: center;
+            width: 500px;
+        }
+
+        .tree {
+            height: 80px;
+            width: auto;
+            position: absolute;
+            left: 78%;
+            top: 30%;
+        }
+    }
+
+    .nav_arrow {
+        height: 8%;
+        width: 100%;
+        justify-content: flex-end;
+        align-items: center;
+
+        .sliders {
+            height: 80%;
+            width: 15%;
+            justify-content: center;
+            align-items: center;
+
+            img {
+                height: 70%;
+            }
+        }
+
+    }
+} */
+
+/* } */
